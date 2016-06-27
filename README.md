@@ -1,5 +1,8 @@
-# basedonline
-v0.1 of the boilertemplate:
+# BasePlateHTML
+v0.2 of  BasePlateHTML:
+
+This template can be used as a starting point prior to template development with the BasePlateWP boilerplate.
+When using this plate as a basis, you can simply transer your whole assets folder to your new BasePlateWP project folder and devide and copy the html over to the new template.
 
 For using the template:
 
@@ -10,6 +13,3 @@ For using the template:
 4.	bower install
 5.  npm install
 6.	gulp
-
-Extra lines to the .htacces file are added for an extra layer of security.
-These block common Brute-Force Attacks.

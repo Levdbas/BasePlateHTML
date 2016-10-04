@@ -11,28 +11,28 @@
 }
 .search-form .search-submit {
   @extend .btn;
-  @extend .btn-secondary;
+  @extend .btn-default;
 }
 .wpcf7-form {
     input, textarea {
         width: 100%;
         background: transparant;
-        border: 1px solid $nnz;
+        border: 1px solid $brand-primary;
         padding: 5px;
         &:focus{
-          border:1px solid $green;
+          border:1px solid $brand-primary;
         }
     }
     .wpcf7-submit {
         border: 0px none;
         display: inline;
-        color: $nnz;
+        color: $brand-primary;
         font-weight: bold;
         width: auto;
         background: transparent;
         padding: 0;
         &:hover{
-            color: $green;
+            color: $brand-primary;
         }
     }
 }

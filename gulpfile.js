@@ -1,4 +1,3 @@
-
 // ## Globals
 var argv         = require('minimist')(process.argv.slice(2));
 var autoprefixer = require('gulp-autoprefixer');
@@ -56,7 +55,7 @@ var enabled = {
   // Enable static asset revisioning when `--production`
   rev: argv.production,
   // Disable source maps when `--production`
-  maps: !argv.production,
+  maps: argv.production,
   // Fail styles task on error when `--production`
   failStyleTask: argv.production,
   // Fail due to JSHint warnings only when `--production`
@@ -106,7 +105,8 @@ var cssTasks = function(filename) {
       ]
     })
     .pipe(cssNano, {
-      safe: true
+      safe: true,
+      mergeRules: false
     })
     .pipe(function() {
       return gulpif(enabled.rev, rev());

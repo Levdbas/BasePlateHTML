@@ -18,7 +18,7 @@
     // All pages
     'common': {
       init: function() {
-        $('.dropdown-toggle').dropdown();
+        // JavaScript to be fired on all pages
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

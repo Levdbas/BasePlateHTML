@@ -1,0 +1,35 @@
+::selection{
+  background: $color-secondary;
+  color:white;
+}
+body{
+  @include media-breakpoint-up(sm) {
+    background-size: cover;
+  }
+  background-attachment: fixed;
+  background-position: center;
+}
+h1{
+
+}
+h2{
+
+}
+
+img{
+  max-width: 100%;
+}
+p{
+  font-size: 22px;
+  line-height: 30px;
+}
+strong{
+  font-weight: bold;
+}
+
+a{
+  color: $color-secondary;
+  &:hover{
+    color: $color-secondary;
+  }
+}

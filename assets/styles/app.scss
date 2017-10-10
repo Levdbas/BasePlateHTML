@@ -1,13 +1,12 @@
-// Automatically injected Bower dependencies via wiredep (never manually edit this block)
-// bower:scss
-@import "../../bower_components/bootstrap/scss/bootstrap.scss";
-// endbower
+
+// Import npm dependencies
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
 
 @import "common/variables";
 @import "common/reset";
 @import "common/mixins";
 @import "common/global";
-@import "common/embed";
 
 @import "components/buttons";
 @import "components/comments";

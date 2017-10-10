@@ -1,30 +1,22 @@
 {
-  "name": "roots/sage",
-  "type": "wordpress-theme",
-  "license": "MIT",
-  "description": "The best WordPress starter theme with a modern front-end development workflow. Based on HTML5 Boilerplate, gulp, Bower, and Bootstrap.",
-  "homepage": "https://roots.io/sage/",
-  "authors": [
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+    "name": "BasePlate",
+    "description": "Great theme for small-medium sized projects for oldschool FTP deploment, featuring top-notch build tools.",
+    "license": "MIT",
+    "require": {
+        "php": "^7.0"
     },
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
+    "config": {
+        "preferred-install": "dist"
+    },
+    "require": {
+        "wpackagist-plugin/wordpress-seo": "^4.8",
+        "wpackagist-plugin/custom-post-type-ui": "^1.5.3",
+        "wpackagist-plugin/support-hours": "^1.3.1",
+        "wpackagist-plugin/trigger-browsersync": "^0.5"
+    },
+    "extra": {
+        "installer-paths": {
+            "../../plugins/{$name}": ["type:wordpress-plugin"]
+        }
     }
-  ],
-  "keywords": [
-    "wordpress"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/sage/issues",
-    "forum": "https://discourse.roots.io/"
-  },
-  "require": {
-    "php": ">=5.4.0",
-    "composer/installers": "~1.0"
-  }
 }

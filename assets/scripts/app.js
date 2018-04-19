@@ -1,6 +1,13 @@
 import 'bootstrap';
 
 /* ========================================================================
+Import individual plugins like so
+import 'bootstrap/js/dist/util';
+import 'bootstrap/js/dist/dropdown';
+* ======================================================================== */
+
+import exampleImport from './example-import';
+/* ========================================================================
 * DOM-based Routing
 * Based on http://goo.gl/EUTi53 by Paul Irish
 *
@@ -20,7 +27,7 @@ import 'bootstrap';
     // All pages
     'common': {
       init: function() {
-
+        exampleImport();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

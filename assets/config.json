@@ -1,0 +1,6 @@
+{
+  "browserSyncURL": "baseplatehtml.local",
+  "browserSyncPort": 3000,
+  "themePath": "",
+  "assetsPath": "assets"
+}

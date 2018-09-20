@@ -1,0 +1,20 @@
+::selection{
+  background: $color-secondary;
+  color:white;
+}
+body{
+  background-attachment: fixed;
+  background-position: center;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+.lazyload{
+  opacity: 0;
+  transition: opacity 0.4s ease 0.2s;
+  &[data-loaded="true"]{
+    opacity: 1;
+  }
+}

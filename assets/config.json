@@ -1,0 +1,5 @@
+{
+  "browserSyncURL": "testenvironment.local",
+  "themePath": "app",
+  "assetsPath": "assets"
+}

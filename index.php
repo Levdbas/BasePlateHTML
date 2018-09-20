@@ -1,3 +1,4 @@
+<?php include 'assets.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
   <meta name="author" content="">
   <title>Bare - Start Bootstrap Template</title>
   <!-- Bootstrap Core CSS -->
-  <link media="all" type="text/css" href="dist/styles/app.css" id="sage/css-css" rel="stylesheet">
+  <link media="all" type="text/css" href="<?php the_asset('app.css'); ?>" id="sage/css-css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -17,6 +18,6 @@
   <![endif]-->
 </head>
 <body>
-  <script src="dist/scripts/app.js"></script>
+  <script src="<?php the_asset('app.js'); ?>"></script>
 </body>
 </html>

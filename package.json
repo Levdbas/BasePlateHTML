@@ -27,7 +27,7 @@
     "file-loader": "^2.0",
     "uglifyjs-webpack-plugin": "^2.0",
     "imagemin-webpack-plugin": "^2.3.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.9.3",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0",
     "sass-loader": "^7.1",

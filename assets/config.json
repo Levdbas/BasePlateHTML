@@ -1,6 +1,9 @@
 {
-  "browserSyncURL": "testenvironment.local",
-  "themePath": "app",
-  "assetsPath": "assets",
-  "sourceMaps": false
+    "entry": {
+        "app": ["./scripts/app.js", "./styles/app.scss"]
+    },
+    "sourceMaps": false,
+    "themePath": "app",
+    "assetsPath": "assets",
+    "browserSyncURL": "testenvironment.local"
 }

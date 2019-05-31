@@ -18,6 +18,7 @@
   <![endif]-->
 </head>
 <body>
+  <script src="<?php the_asset('vendor.js'); ?>"></script>
   <script src="<?php the_asset('app.js'); ?>"></script>
 </body>
 </html>

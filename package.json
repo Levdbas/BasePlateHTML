@@ -19,7 +19,7 @@
     },
     "license": "GPL-3.0",
     "devDependencies": {
-        "basebuilder-config": "^0.4.1"
+        "basebuilder-config": "^0.4.5"
     },
     "dependencies": {
         "bootstrap": "^4.3.1",

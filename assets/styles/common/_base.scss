@@ -1,49 +1,192 @@
-%base-style {
-	color: $base-color;
-	font-family: $base-font;
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 1.4;
-	margin: 0;
+html {
+	min-height: 100vh;
 }
 
-%button {
-	@include pxtorem(16px);
+body {
+	box-sizing: border-box;
+	display: flex; /* enables flex content for its children */
+	min-height: 100vh;
+	margin: 0; /* removes default style */
 
-	background: $highlight1;
-	border-style: solid;
-	border-width: 2px;
-	color: $base-color;
-	display: inline-block;
-	font-weight: bold;
-	line-height: 26px;
-	margin-bottom: 15px;
-	margin-right: 30px;
-	padding: 15px 10px;
-	text-align: center;
-	transition: all ease 0.3s;
+	&.overlay-active {
+		height: 100vh;
+		overflow: hidden;
+	}
+}
+// ==========================================================================
+// Navigation bar
+// ==========================================================================
+
+.navbar {
+	position: fixed;
+	flex-shrink: 0;
+	width: 100%;
+	background: $brown;
+
+	@include media-breakpoint-up(md) {
+		position: relative;
+		width: auto;
+	}
+
+	li a {
+		color: white;
+	}
+}
+
+.navbar__inner {
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+
+	& > * {
+		position: relative;
+		z-index: 3;
+	}
+
+	&::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		content: "";
+		background-image: url("../images/grunge.png");
+		background-position: center center;
+		background-size: cover;
+		opacity: 0.25;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+		height: 100%;
+		content: "";
+		background: linear-gradient(to bottom, rgba(34, 31, 30, 1) 0%, rgba(32, 124, 202, 0) 20%, rgba(32, 124, 202, 0) 80%, rgba(34, 31, 30, 1) 100%);
+	}
+
+	@include media-breakpoint-up(md) {
+		position: sticky;
+		flex-direction: column;
+		height: 100vh;
+		padding: 60px 30px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding: 100px 45px 60px 45px;
+	}
+}
+
+.navbar__burger {
+	background: red;
+
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+}
+
+.navbar__logo {
+
+	img {
+		display: block;
+
+		@include media-breakpoint-up(lg) {
+			width: 215px;
+		}
+	}
+}
+
+.navbar__nav {
+	display: none;
+
+	@include media-breakpoint-up(md) {
+		display: block;
+	}
+}
+
+.navbar__footer {
+	display: none;
+
+	@include media-breakpoint-up(md) {
+		display: block;
+	}
+}
+
+.navbar__lang {
+	display: block;
+
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+}
+// ==========================================================================
+// Main content area
+// ==========================================================================
+
+.main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 	width: 100%;
 
-	.is-style-outline & {
-		background: transparent;
-	}
-
-	&:last-of-type {
-		margin-right: 0;
-	}
-
-	&:hover {
-		background: $highlight2;
-		color: $base-color;
-		text-decoration: none;
+	p {
+		font-size: 160px;
 	}
 }
 
-.lazyload {
-	opacity: 0;
-	transition: opacity 0.4s ease 0.2s;
+// ==========================================================================
+// Overlay menu
+// ==========================================================================
 
-	&[data-was-processed="true"] {
-		opacity: 1;
+.overlay {
+	position: fixed;
+	z-index: 10;
+	display: none;
+	width: 100%;
+	height: 100%;
+
+	&::after {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background: url("../images/img-noise-361x370.png");
+		opacity: 0.9;
+	}
+
+	&::before {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background: linear-gradient(to bottom, rgba(34, 31, 30, 1) 0%, rgba(32, 124, 202, 0) 20%, rgba(32, 124, 202, 0) 80%, rgba(34, 31, 30, 1) 100%);
+	}
+}
+
+.overlay__inner {
+	position: relative;
+	z-index: 4;
+	padding: 80px 30px 30px 30px;
+}
+
+.overflow__menus {
+	height: 900px;
+	overflow: auto;
+	color: white;
+
+	p {
+		font-size: 60px;
 	}
 }

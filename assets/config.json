@@ -2,9 +2,8 @@
     "entry": {
         "app": ["./scripts/app.js", "./styles/app.scss"]
     },
-    "sourceMaps": true,
-    "themePath": "",
+    "sourceMaps": false,
+    "themePath": "app",
     "assetsPath": "assets",
-    "publicPath": "http://localhost:3000/",
-    "browserSyncURL": "http://koeienenkaas.local/"
+    "browserSyncURL": "testenvironment.local"
 }

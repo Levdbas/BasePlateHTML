@@ -19,13 +19,13 @@
     },
     "license": "GPL-3.0",
     "devDependencies": {
-        "basebuilder-config": "^0.4.5"
+        "basebuilder-config": "^0.5.1"
     },
     "dependencies": {
-        "bootstrap": "^4.3.1",
+        "bootstrap": "^4.4.1",
         "font-awesome": "^4.7.0",
         "jquery": "^3.4",
-        "popper.js": "^1.15",
-        "vanilla-lazyload": "12.0.0"
+        "popper.js": "^1.16",
+        "vanilla-lazyload": "12.4.0"
     }
 }

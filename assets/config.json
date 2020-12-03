@@ -3,7 +3,8 @@
         "app": ["./scripts/app.js", "./styles/app.scss"]
     },
     "sourceMaps": false,
-    "themePath": "app",
+    "themePath": "/",
     "assetsPath": "assets",
+    "rootToThemePath": "/",
     "browserSyncURL": "testenvironment.local"
 }

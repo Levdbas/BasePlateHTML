@@ -12,11 +12,8 @@ function getAsset($asset) {
     return $file;
   }
 }
+
 function the_asset($asset){
   echo getAsset($asset);
 }
 
-
-
-
-?>

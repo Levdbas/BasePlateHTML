@@ -1,18 +1,17 @@
-//@import "~font-awesome/scss/font-awesome";
-@import "common/variables";
-@import "common/mixins";
-@import "common/bootstrap-custom";
-@import "common/base";
-@import "common/styleguide";
-@import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "layouts/header";
-@import "layouts/navs";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-//@import "gutenberg/blocks";
-//@import "gutenberg/gutenberg-frontend";
-//@import "gutenberg/gutenberg-general";
+// ==========================================================================
+// Import child settings before parent theme.
+// ==========================================================================
+
+@import "01-settings";
+@import "02-tools";
+
+// ==========================================================================
+// Loading child theme scss files
+// ==========================================================================
+
+@import "03-elements";
+@import "04-components";
+@import "05-blocks";
+@import "06-partials";
+@import "07-layouts";
+@import "08-utilities";

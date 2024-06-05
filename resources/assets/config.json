@@ -4,7 +4,8 @@
     },
     "sourceMaps": false,
     "themePath": "/",
-    "assetsPath": "assets",
+    "scssSettingsFolder": "01-settings/",
+    "assetsPath": "resources/assets",
     "rootToThemePath": "/",
-    "browserSyncURL": "testenvironment.local"
+    "browserSyncURL": "baseplate-html.local"
 }

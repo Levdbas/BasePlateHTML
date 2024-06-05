@@ -8,6 +8,9 @@
         "type": "git",
         "url": "git://github.com/levdbas/baseplate.git"
     },
+    "config": {
+        "userConfig": "/resources/assets/config.json"
+    },
     "scripts": {
         "dev": "npm run development",
         "development": "basebuilder-config development",

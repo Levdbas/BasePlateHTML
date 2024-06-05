@@ -8,6 +8,7 @@ ini_set('display_errors', 1);
 use Twig\Environment;
 
 require_once 'vendor/autoload.php'; 
+require_once 'src/assets.php';
 
 $environment_options = array(
     'debug' => true,

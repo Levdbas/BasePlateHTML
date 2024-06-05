@@ -1,9 +1,9 @@
 <?php
 
-function getAsset($asset) {
+function get_asset($asset) {
 
-  // Look for the manifest file.
-  $manifest = (__DIR__ . '/dist/manifest.json');
+  $basedir = realpath(__DIR__ . '/..');
+  $manifest = ($basedir . '/dist/manifest.json');
   if (file_exists($manifest)){
     $manifest = file_get_contents($manifest);
     $json = json_decode($manifest, true);
@@ -14,6 +14,6 @@ function getAsset($asset) {
 }
 
 function the_asset($asset){
-  echo getAsset($asset);
+  echo get_asset($asset);
 }
 
